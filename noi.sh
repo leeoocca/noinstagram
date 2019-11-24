@@ -4,7 +4,7 @@
 # In my case, it is set in ~/.bash_profile and gets loaded with the -l parameter above
 
 #should change this to you
-github_username=datvance
+github_username=leeoocca
 
 #maybe flimsy, could just hard-code it
 project_dir="$( cd "$( dirname "$0" )" && pwd )"
