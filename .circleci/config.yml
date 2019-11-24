@@ -43,4 +43,3 @@ workflows:
                 - master
     jobs:
       - build:
-          context: leeoocca-credentials
