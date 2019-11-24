@@ -30,16 +30,3 @@ jobs:
               git commit ./docs/index.html -m "Build ${CIRCLE_BUILD_NUM}"
               git push https://${GITHUB_ACCESS_TOKEN}:x-oauth-basic@github.com/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}.git ${CIRCLE_BRANCH}
             fi
-
-workflows:
-  version: 2
-  hourly:
-    triggers:
-      - schedule:
-          cron: "04 * * * *"
-          filters:
-            branches:
-              only:
-                - master
-    jobs:
-      - build:
